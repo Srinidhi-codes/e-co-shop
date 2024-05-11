@@ -6,6 +6,7 @@ import { FaSearch } from 'react-icons/fa'
 import { IoClose } from 'react-icons/io5'
 import {navList} from '@/constants/NavConstants'
 import { usePathname } from 'next/navigation'
+import { HiMenuAlt2 } from 'react-icons/hi'
 
 const Navbar = () => {
     const pathname = usePathname()
@@ -33,6 +34,7 @@ const Navbar = () => {
                         </Link>
                        ))}
                     </div>
+                    <HiMenuAlt2 className=' inline-flex md:hidden cursor-pointer w-8 h-6 '/>
                 </nav>
             </div>
         </>
